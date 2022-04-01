@@ -1,0 +1,27 @@
+settings:
+  token_env: TOKEN
+  parse_mode: Markdown
+
+config:
+
+commands:
+  word: word <your_word>
+  start: bye
+
+buttons:
+  doc: doc
+
+markups:
+  doc:
+    - [ doc ]
+
+results:
+  help:
+
+  word:
+    type: article
+    title: '{{ .Word }}'
+    #reply_markup:
+    #  inline_keyboard:
+    #    - - text: 🔗 pkg.go.dev
+    #        url: '{{ .URL }}'
